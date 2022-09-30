@@ -3,6 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/c82b6c48-1db5-49c9-8dc9-aa99faee3e6b/console_1.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/controllers/todos_controller.js" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/models/config/export_db_postgres.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>

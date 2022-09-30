@@ -4,7 +4,8 @@
   "description": "This is the personal project about a todo note app",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "npm install && node index.js"
   },
   "author": "Daniel Borcard",
   "license": "ISC",
