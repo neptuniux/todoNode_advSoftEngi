@@ -2,11 +2,11 @@ const db = require("../config/database");
 
 class tag_structure {
 
-    constructor(id = -1 , title, url = '', todos = []) {
+    constructor(id = -1 , title, url = '') {
         this.id = id;
         this.title = title;
         this.url = url;
-        this.todos = todos;
+        //this.todos = todos;
 
     }
 
@@ -16,7 +16,7 @@ class tag_structure {
         tag.id = json.id || -1;
         tag.title = json.title;
         tag.url = json.url;
-        tag.todos = json.todos;
+        //tag.todos = json.todos;
         return tag;
     }
     static fromJsonArray(array) {

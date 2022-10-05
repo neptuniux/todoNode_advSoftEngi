@@ -3,13 +3,13 @@ const tag_structure = require("../structures/tag_structure");
 
 class todo_structure {
 
-    constructor(id = -1 , title, completed = false, order = 0, url = '', tags = []) {
+    constructor(id = -1 , title, completed = false, order = 0, url = '') {
         this.id = id;
         this.title = title;
         this.completed = completed;
         this.order = order;
         this.url = url;
-        this.tags = tags;
+        //this.tags = tags;
     }
 
 
@@ -21,7 +21,7 @@ class todo_structure {
         todo.completed = json.completed || false;
         todo.order = json.order || 0;
         todo.url = json.url;
-        todo.tags =  json.tags;
+        // todo.tags =  json.tags;
         return todo;
     }
 
