@@ -34,7 +34,8 @@ module.exports = {
         const tagId = ctx.request.body.id;
         if (!await todo_structure.getTodoById(todoId)) ctx.throw(404, {'error': 'Todo not found'});
         await todo_structure.linkTodoToTagById(todoId, tagId);
-        ctx.status = 204;
+        ctx.status = 201;
+        ctx.body = await tag_structure.getTagsByTodoId(todoId);
     },
 
     async show(ctx) {

@@ -14,6 +14,7 @@ module.exports = {
 
     async listByTodoId(ctx) {
         const id = ctx.params.id;
+        if (!await todo_structure.getTodoById(id)) ctx.throw(404, {'error': 'Todo not found'});
         ctx.body = await tag_structure.getTagsByTodoId(id);
     },
 
